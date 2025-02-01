@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; // Import main CSS file
+import '../App.css'; // Import main CSS file
 
 const Resume = () => {
   return (
