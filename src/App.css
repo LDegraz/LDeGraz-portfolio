@@ -1,6 +1,46 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333; /* Dark text color for readability */
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #282c34; /* Dark background for header */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
 
 /* Portfolio Styling */
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -10,6 +50,8 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .portfolio-image {
@@ -34,4 +76,31 @@
 
 .portfolio-item:hover .portfolio-link {
   opacity: 1; /* Shows the project name on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282c34; /* Dark background for footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  nav a {
+    margin: 10px 0; /* Margin for vertical spacing */
+  }
 }
