@@ -1,53 +1,43 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation to get the current path
+import { NavLink } from 'react-router-dom';
 
 const HeaderFooter = () => {
-    const location = useLocation(); // Get the current location
-
     return (
         <div>
-            {/* Header Section */}
             <header>
                 <h1>Your Name</h1>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/" style={{ textDecoration: location.pathname === '/' ? 'underline' : 'none' }}>
+                            <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>
                                 About Me
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/portfolio" style={{ textDecoration: location.pathname === '/portfolio' ? 'underline' : 'none' }}>
+                            <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "active-link" : "")}>
                                 Portfolio
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/contact" style={{ textDecoration: location.pathname === '/contact' ? 'underline' : 'none' }}>
+                            <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")}>
                                 Contact
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/resume" style={{ textDecoration: location.pathname === '/resume' ? 'underline' : 'none' }}>
+                            <NavLink to="/resume" className={({ isActive }) => (isActive ? "active-link" : "")}>
                                 Resume
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            {/* Footer Section */}
             <footer>
                 <p>Connect with me:</p>
                 <ul>
-                    <li>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    </li>
+                    <li><a href="https://github.com/LDegraz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                 </ul>
             </footer>
         </div>
