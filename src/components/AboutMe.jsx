@@ -12,7 +12,7 @@ const AboutMe = () => {
                 My journey in web development started a few years ago. I love learning new technologies and continuously improving my skills.
             </p>
             <p>
-                In my free time, I enjoy woodworking, hiking, and going to the beach. I'm excited to connect with others in the tech community and collaborate on innovative projects!
+                In my free time, I enjoy woodworking, hiking, and going to the beach. I am excited to connect with others in the tech community and collaborate on innovative projects!
             </p>
         </div>
     );
