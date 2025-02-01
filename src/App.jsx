@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
 import ContactForm from './ContactForm';
 import Resume from './Resume';
+import './App.css'; // Import main CSS file
 
 const App = () => {
     return (
