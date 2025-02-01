@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import readmeImage from '../assets/readme.png';
+import placeholderImage from '../assets/placeholder.jpg';
 
 const projects = [
     {
@@ -9,9 +10,29 @@ const projects = [
         github: "https://github.com/LDegraz/README-generator.git",
     },
     {
-        title: "Placeholder Project",
-        image: readmeImage,
-        github: "https://github.com/LDegraz/README-generator.git",
+        title: "Placeholder: GitHub Profile",
+        image: placeholderImage,
+        github: "https://github.com/LDegraz",
+    },
+    {
+        title: "Placeholder: GitHub Profile",
+        image: placeholderImage,
+        github: "https://github.com/LDegraz",
+    },
+    {
+        title: "Placeholder: GitHub Profile",
+        image: placeholderImage,
+        github: "https://github.com/LDegraz",
+    },
+    {
+        title: "Placeholder: GitHub Profile",
+        image: placeholderImage,
+        github: "https://github.com/LDegraz",
+    },
+    {
+        title: "Placeholder: GitHub Profile",
+        image: placeholderImage,
+        github: "https://github.com/LDegraz",
     },
 ];
 
