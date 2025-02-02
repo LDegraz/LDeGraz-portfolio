@@ -1,4 +1,4 @@
-# Lauren DeGrazia’s Portfolio
+# Lauren DeGrazia’s Portfolio 🤌🏼
 
 ## Description
 
@@ -99,4 +99,5 @@ If you have any questions, feel free to reach out!
 ### How to Contact
 
 You can contact me via email for any inquiries or feedback regarding this project. Alternatively, you can open an issue on GitHub if you encounter any problems or have suggestions for improvements. I will do my best to respond promptly!
+
 
